@@ -7,3 +7,4 @@ let temps= [
     {day: 'Saturday', morningTemp: 16, dayTemp: 20, nightTemp: 4},
     {day: 'Sunday', morningTemp: 14, dayTemp: 18, nightTemp: 5}
 ]
+console.log(temps);
