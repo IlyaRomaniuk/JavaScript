@@ -24,3 +24,10 @@ let books = [
 // }
 // console.log(mostAuthorsBook);
 
+let longestNameBook = books[0];
+for (let book of books) {
+    if (book.name.length > longestNameBook.name.length) {
+        longestNameBook = book;
+    }
+}
+console.log(longestNameBook);
