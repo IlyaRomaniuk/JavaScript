@@ -24,10 +24,22 @@ let books = [
 // }
 // console.log(mostAuthorsBook);
 
-let longestNameBook = books[0];
-for (let book of books) {
-    if (book.name.length > longestNameBook.name.length) {
-        longestNameBook = book;
-    }
-}
-console.log(longestNameBook);
+// let longestNameBook = books[0];
+// for (let book of books) {
+//     if (book.name.length > longestNameBook.name.length) {
+//         longestNameBook = book;
+//     }
+// }
+// console.log(longestNameBook);
+
+// let booksWithTwoAuthors = books.filter(book =>
+//     Array.isArray(book.authors) && book.authors.length === 2
+// );
+//
+// console.log(booksWithTwoAuthors);
+
+// let singleAuthorBooks = books.filter(book =>
+//     typeof book.authors === 'string'
+// );
+//
+// console.log(singleAuthorBooks);
