@@ -1,5 +1,3 @@
-
-
 let foobar = (arrayOfPrimitives) => {
     document.write(`<ul>`)
     for (const item of arrayOfPrimitives) {
