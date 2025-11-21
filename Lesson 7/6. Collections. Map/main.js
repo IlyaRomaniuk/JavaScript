@@ -1,0 +1,10 @@
+let map = new Map();
+console.log(map);
+let likar = {id: 'likar'};
+let petya = {id: 'petya'};
+map.set(likar, {name: 'roma', surname: 'oganov'});
+map.set(petya, {name: 'oleksandr', surname: 'petrov'});
+console.log(map);
+console.log(map.get(likar));
+map.delete(likar);
+console.log(map);
