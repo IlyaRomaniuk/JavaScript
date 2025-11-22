@@ -12,12 +12,21 @@ function Car (model, manufacturer, yearOfManufacture, maximumSpeed, engineCapaci
             console.log(key, this[key]);
         }    
     };
-    this.increaseMaxSpeed = function (newSpeed) {
-        this.maximumSpeed = this.maximumSpeed + newSpeed;
-    }
-    this.changeYear = function (newYear) {
-        this.yearOfManufacture = newYear;
-    }
-};
-let toyotaCar = new Car ('toyota', 'japan',2025, '180 km/hours', '2.0L')
+    this.increaseMaxSpeed = function (speedToAdd) {
+        if (speedToAdd > 0) this.maximumSpeed = this.maximumSpeed + speedToAdd;
+    };
+    this.changeYear = function (year) {
+        if (year > 1815) this.yearOfManufacture = year;
+    };
+    this.addDriver = function (driver) {
+        if (driver) this.driver = driver;
+    };
+}
+let toyotaCar = new Car ('toyota', 'japan',2025, 180, '2.0L')
 console.log(toyotaCar);
+
+toyotaCar.drive();
+toyotaCar.info();
+toyotaCar.increaseMaxSpeed(100);
+toyotaCar.changeYear(2000);
+toyotaCar.addDriver({});
