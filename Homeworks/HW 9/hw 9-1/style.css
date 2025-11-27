@@ -1,0 +1,16 @@
+.wrap {
+    font-size: 36px;
+}
+
+.collapse {
+    width: 200px;
+    height: 200px;
+}
+
+.alpha {
+    background: red;
+}
+
+.beta {
+    color: aqua;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.course {
+    width: 300px;
+    border: 2px solid #444;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f7f7f7;
+}
