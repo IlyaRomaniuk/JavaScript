@@ -8,7 +8,7 @@
 //         }
 //     });
 
-fetch('https://dummyjson.com/products')
+fetch('https://dummyjson.com/products?limit=10')
 .then(value => value.json())
 .then(res => {
     console.log(res);
@@ -17,10 +17,19 @@ fetch('https://dummyjson.com/products')
     document.write(`<div>`);
     for (const product of products) {
         document.write(`<div>`);
-        document.write(`<p>${product.brand} - ${product.price}</p>`);
+        document.write(`<p>${product.id}___ ${product.brand} - ${product.price}</p>`);
         document.write(`<img src="${product.thumbnail}" alt="">`)
         document.write(`</div>`);
     }
     document.write(`</div>`);
-
 });
+
+fetch('https://dummyjson.com/products/add', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+        title: 'BMW Pencil',
+    })
+})
+    .then(res => res.json())
+    .then(value => console.log(value));
